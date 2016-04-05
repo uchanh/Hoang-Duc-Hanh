@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+	nav , h1{
+		float:left;
+		width:100%;
+	}
+	
+	.h_nav ul li {
+		list-style-type:none;
+		display: inline-block;
+		border-right:1px solid white;
+		float: left;
+		background: linear-gradient(blue,black);
+        margin:0;
+		padding:0;
+	}
+	.h_nav li a{
+		color:#fff;
+		text-decoration:none;
+		text-align:center;
+		display:block;
+		width: 100px;
+		height:30px;
+		padding-top:10px;
+	}
+
+	.h_nav li:first-child{
+		border-top-left-radius: 7px;
+		border-bottom-left-radius: 7px;
+		border-left:none;
+	}
+
+	.h_nav li:last-child{
+		border-top-right-radius: 7px;
+		border-bottom-right-radius: 7px;
+	}
+
+	.h_nav li a:hover{
+		background:purple;
+		color:red;
+	}
+
+	
+	.v_nav ul li{
+		width: 200px;
+		list-style-type:none;
+		border-bottom:1px solid white;
+		background: linear-gradient(blue,black);
+		display:block;
+		margin:0;
+		padding:0;
+	}
+
+	.v_nav li a {
+		text-decoration:none;
+		padding: 5px 10px;
+		display:block;
+		color:#fff;
+		text-decoration:none;
+		text-align:center;
+		text-block:center;
+		height:30px;
+		padding-top:10px;
+		
+	}
+	.v_nav li:first-child{
+		border-top-radius:7px;
+		border-top-left-radius:7px;
+		border-top-right-radius:7px;
+		}
+
+	.v_nav li:last-child{
+		border-bottom-radius:7px;
+		border-bottom-left-radius:7px;
+		border-bottom-right-radius:7px;
+		}
+	.v_nav li a:hover {
+		background: purple;
+		color: red;
+	}
+	
+	
+	.dr_nav ul li {
+		list-style-type:none;
+		display: inline-block;
+		border-right:1px solid white;
+		float: left;
+		background: linear-gradient(blue,black);
+        margin:0;
+		padding:0;
+		width:200px;
+	}
+	.dr_nav li a{
+		color:#fff;
+		padding: 5px 10px;
+		text-decoration:none;
+		text-align:center;
+		display:block;
+		height:30px;
+		padding-top:10px;
+	}
+		
+	.dr_nav li:first-child{
+		border-top-left-radius: 7px;
+		border-bottom-left-radius: 7px;
+		border-left:none;
+	}
+
+	.dr_nav li:last-child{
+		border-top-right-radius: 7px;
+		border-bottom-right-radius: 7px;
+	}
+	
+	.dr_nav a:hover{
+		background: purple;
+		color: red;
+	}
+
+	.dr_nav li ul{
+		display:none;
+		padding-left:0px;
+	}
+	.dr_nav li:hover ul{
+		display: block;
+	}
+	
+	
+	.vf_nav ul li {
+		width: 200px;
+		list-style-type:none;
+		border: 1px solid white;
+		position: relative;
+		list-style-type:none;
+		border-bottom:1px solid white;
+		background: linear-gradient(blue,black);
+		display:block;
+		margin:0;
+		padding:0;
+	}
+	.vf_nav a{
+		padding: 5px 10px;
+		text-decoration: none;
+		display:block;
+		height: 30px;
+		color: white;
+		padding-top: 10px;
+	}
+	.vf_nav li:first-child{
+		border-top-radius:7px;
+		border-top-left-radius:7px;
+		border-top-right-radius:7px;
+		}
+
+	.vf_nav li:last-child{
+		border-bottom-radius:7px;
+		border-bottom-left-radius:7px;
+		border-bottom-right-radius:7px;
+		}
+	.vf_nav a:hover{
+		background: purple;
+		color: red;
+	}
+	.vf_nav li ul {
+		display:none;
+		position:absolute;
+		left:160px;
+		top:0;
+	}
+	.vf_nav li:hover ul{
+		display:block;
+	}
+	</style>
+</head>
+<body>
+	<h1>Horizonal navigation bar</h1>
+	<nav class="h_nav">
+		<ul>
+		  <li><a href=“#”>Home</a></li>
+		  <li><a href=“#”>News</a></li>
+		  <li><a href=“#”>Contact</a></li>
+		  <li><a href=“#”>About</a></li>
+		</ul>
+	</nav>
+	<h1>Vertical navigation bar</h1>
+	<nav class="v_nav">
+		<ul>
+		  <li><a href=“#”>Home</a></li>
+		  <li><a href=“#”>News</a></li>
+		  <li><a href=“#”>Contact</a></li>
+		  <li><a href=“#”>About</a></li>
+		</ul>
+	</nav>
+	 <h1> Dropdown Navigation Bar </h1>
+	 <nav class="dr_nav">
+	    <ul>
+		   <li><a href="home"> HOME </a></li>
+		   <li><a href="news"> NEWS </a>
+		       <ul>
+                   <li> <a href="#">Item 1</a></li>
+                   <li> <a href="#">Item 2</a></li>
+                   <li> <a href="#">Item 3</a></li>
+				   <li> <a href="#">Item 4</a></li>
+				</ul>   
+		   </li>
+		   <li><a href="contact"> CONTACT </a></li>
+		   <li><a href="about"> ABOUT </a></li>
+		</ul>
+	  </nav>
+	 <h1> Vertical Flyout Navigation Bar </h1>
+	 <nav class="vf_nav">
+	    <ul>
+		   <li><a href="home"> HOME </a></li>
+		   <li><a href="news"> NEWS </a>
+		       <ul>
+                   <li> <a href="#">Item 1</a></li>
+                   <li> <a href="#">Item 2</a></li>
+                   <li> <a href="#">Item 3</a></li>
+				   <li> <a href="#">Item 4</a></li>
+				</ul>   
+		   </li>
+		   <li><a href="contact"> CONTACT </a></li>
+		   <li><a href="about"> ABOUT </a></li>
+		</ul>
+	  </nav>
+</body>
+
+
+</html>
